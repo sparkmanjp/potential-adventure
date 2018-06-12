@@ -6,10 +6,10 @@ state
 - character : Character
     - current_hp
     - max_hp
-    - tear_speed
-    - tear_damage
-    - tear_range
-    - move_speed
+    - move
+    - speed
+    - damage
+    - range
 - rooms : Room list
     - rooms are revealed as player explores
 - current_room : Room

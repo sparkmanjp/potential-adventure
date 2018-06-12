@@ -1,3 +1,6 @@
+# Brendon Nguyen, Jack Sparkman
+# June 11, 2018
+
 class Character(object):
     """Stats for playable characters """
     def __init__(self, current_hp = 3,

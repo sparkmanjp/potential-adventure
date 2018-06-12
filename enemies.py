@@ -1,4 +1,7 @@
-class Enemies(object):
+# Brendon Nguyen, Jack Sparkman
+# June 11, 2018
+
+class Enemy(object):
     """Stats for enemy characters"""
     def __init__(self, current_hp = 3,
                        move_speed= 1, # multiplier, 1 as default
@@ -11,4 +14,4 @@ class Enemies(object):
         self.tps = tps
         self.damage = damage
         self.range = range
-        self.aggressive = aggressive 
+        self.aggressive = aggressive
