@@ -4,9 +4,12 @@
 """
 state
 - character : Character
-    - current hp
-    - max hp
-    - mutable attributes
+    - current_hp
+    - max_hp
+    - tear_speed
+    - tear_damage
+    - tear_range
+    - move_speed
 - rooms : Room list
     - rooms are revealed as player explores
 - current_room : Room
@@ -21,5 +24,5 @@ state
     - consumable : Item
 - game_over : bool
     - final boss hp = 0 or current hp = 0
-    - final boss hp = 0 and current hp != 0 
+    - final boss hp = 0 and current hp != 0
 """
