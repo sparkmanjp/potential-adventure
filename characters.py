@@ -12,4 +12,4 @@ class Character(object):
         self.move_speed = move_speed
         self.tps = tps
         self.damage = damage
-        self.tear_range = tear_range
+        self.range = range
