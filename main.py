@@ -1,8 +1,11 @@
 # Brendon Nguyen, Jack Sparkman
 # June 11, 2018
 
-import pygame, controller
+import pygame
+import controller
+import settings
 
+settings.init()
 pygame.init()
 done = False
 
