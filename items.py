@@ -4,18 +4,23 @@
 class Item(object):
     """Items are anything that can be picked up or purchased in the game.
     - name : string
-    - category : "consumable", "resource", "spacebar", or "trinket"
     -
     """
-    def __init__(self, name):
-        self.name = name 
+    def __init__(self, name, desc = "Generic, unfinished descri"):
+        self.name = name
+        self.description = desc
 
 class Resource(Item):
     """Resources are items that you can acquire more than one of, such as
-    keys, bombs, and coins."""
+    keys, bombs, and coins.
+    - amount : int"""
     def __init__(self, name, amt):
         Item.__init__(self, name)
         self.amount = amt
+
+    def is_depleted(self):
+        """returns true if amount > 0, false otherwise"""
+
 
 class Consumable(Item):
     """Consumables are items that disappear after one use, such as pills.
@@ -32,3 +37,7 @@ class Trinket(Item):
     def __init__(self, name):
         Item.__init__(self, name)
         self.modifiers = mods
+
+keys = Resource("key", 0)
+bombs = Resource("bomb", 0)
+coins = Resoruce("coin", 0
