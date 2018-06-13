@@ -5,7 +5,6 @@ import pygame
 import controller, state, view
 
 pygame.init()
-screen = pygame.display.set_mode((400, 300))
 done = False
 is_blue = True
 x = 30
