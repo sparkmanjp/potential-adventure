@@ -6,10 +6,10 @@ import pygame, controller
 pygame.init()
 done = False
 
-while not done:
-        for event in pygame.event.get():
-                if event.type == pygame.QUIT:
-                        done = True
-        controller
-
-        pygame.display.flip()
+if __name__ == "__main__":
+    while not done:
+            for event in pygame.event.get():
+                    if event.type == pygame.QUIT:
+                            done = True
+            controller
+            pygame.display.flip()

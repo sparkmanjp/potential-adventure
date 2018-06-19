@@ -4,14 +4,14 @@ import pygame
 
 pygame.init()
 screen = pygame.display.set_mode((800, 600))
-done = False
+game_over = False
 is_blue = True
 x = 30
 y = 30
 
 clock = pygame.time.Clock()
 
-while not done:
+while not game_over:
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             done = True
