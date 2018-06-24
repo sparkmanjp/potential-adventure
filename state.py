@@ -35,4 +35,5 @@ class State(object):
     def __init__(self,
                 character = characters.Isaac,
                 rooms = [],
-                current_room = ):
+                current_room,
+                ):
