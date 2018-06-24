@@ -4,6 +4,7 @@
 class Item(object):
     """Items are anything that can be picked up or purchased in the game.
     - name : string
+    - description : string
     """
 
     def __init__(self, name, desc = "Generic description."):
@@ -70,3 +71,4 @@ class Trinket(Item):
 keys = Resoruce("key", 0)
 bombs = Resource("bomb", 0)
 coins = Resource("coin", 0)
+trinket1 = Consumable("Consecrated Poop Rag", [3, 3, 3, 3], 2)
