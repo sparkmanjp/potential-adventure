@@ -5,14 +5,17 @@ import pygame
 import controller
 import settings
 
-settings.init()
 pygame.init()
 done = False
 
-while not done:
-        for event in pygame.event.get():
-                if event.type == pygame.QUIT:
-                        done = True
-        controller
+def main(done):
+    while not done:
+            for event in pygame.event.get():
+                    if event.type == pygame.QUIT:
+                            done = True
+            controller.update_face()
 
-        pygame.display.flip()
+            pygame.display.flip()
+
+if __name__ == "__main__":
+    main(False)
